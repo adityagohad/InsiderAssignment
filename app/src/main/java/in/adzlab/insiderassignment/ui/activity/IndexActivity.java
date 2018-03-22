@@ -29,7 +29,7 @@ public class IndexActivity extends AppCompatActivity {
         Map<String, String> queryParams = new HashMap<>();
         queryParams.put("norm", "1");
         queryParams.put("filterBy", "go-out");
-        queryParams.put("city", "mumbai");
+        queryParams.put("city", "pune");
         RestAPI.getRestService().getData(queryParams).enqueue(new Callback<HomePage>() {
             @Override
             public void onResponse(@NonNull Call<HomePage> call, @NonNull Response<HomePage> response) {
